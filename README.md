@@ -20,3 +20,11 @@
 |           | Compressed    | 89.5 KB      | 11.53 ms           | 71.06 ms          |
 | Payload 3 | Not Compressed | 10.4 MB      | 35.42 ms           | 8.39 s            |
 |           | Compressed    | 893 KB       | 26.28 ms           | 712.01 ms         |
+
+## Plots
+
+### Size Comparison
+![Size Comparison](readmeAssets/plot.png)
+
+### Waiting and Download Time Comparison ( Log graph )
+![Waiting and Download Time](readmeAssets/plotLog.png)
