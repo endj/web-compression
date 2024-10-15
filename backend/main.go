@@ -8,6 +8,10 @@ import (
 )
 
 func main() {
+	tiny := data.GeneratePayload(10, 1)
+	http.HandleFunc("/small", handlers.CreatePayloadHandler(&tiny))
+	http.HandleFunc("/smallC", handlers.CreateCompressedPayloadHandler(&tiny))
+
 	_100users95CompressionRatio := data.GeneratePayload(100, 95)
 	http.HandleFunc("/payload", handlers.CreatePayloadHandler(&_100users95CompressionRatio))
 	http.HandleFunc("/payloadC", handlers.CreateCompressedPayloadHandler(&_100users95CompressionRatio))
